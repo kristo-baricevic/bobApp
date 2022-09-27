@@ -3,7 +3,9 @@ module.exports = {
   content: [
     './pages/index.js',
     './pages/api/properties.js',
-    './pages/_app.js'
+    './pages/_app.js',
+    './components/Button.js',
+    './components/PhotoCard.js',
   ],
   presets: [],
   darkMode: 'media', // or 'class'

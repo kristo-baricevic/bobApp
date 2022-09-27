@@ -1,9 +1,4 @@
 import { useState } from 'react';
-import { getServerSideProps } from '../pages/index.js';
-
-
-getServerSideProps;
-
 
 export function Button ({tag}){
 
@@ -17,8 +12,8 @@ export function Button ({tag}){
 
     return (
         <button
-        className={`btn${toggleClassCheck}`}
+        className={`pill btn${toggleClassCheck}`}
         onClick={handleClick}
-        >{tag}</button>
+        >#{tag}</button>
     )
 }

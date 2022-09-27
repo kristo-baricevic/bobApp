@@ -1,9 +1,5 @@
 import { Button } from "./Button";
 import React from 'react';
-import { getServerSideProps } from '../pages/index.js';
-
-
-getServerSideProps;
 
 export function PhotoCard({property}) {
    
@@ -15,12 +11,11 @@ export function PhotoCard({property}) {
                 <div className="text-center text-white bg-black text-xl mb-2">{property.name}</div>
                   <div className="p-6">
                     {property.tags.map(tag => (               
-                      <div><Button tag={tag}/></div>
-                      ))}
+                      <div className="inline"><Button tag={tag}/></div>
+                    ))}
                   </div>
               </div>
             </div>
           </div>
-        )
+        );
     }
-
